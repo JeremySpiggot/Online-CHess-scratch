@@ -1,0 +1,47 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "score": [0],
+        "lives": [3],
+        "gameState": ["start"]
+      },
+      "lists": {},
+      "broadcasts": {
+        "startGame": "startGame",
+        "playerHit": "playerHit",
+        "gameOver": "gameOver"
+      },
+      "blocks": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "backdrop1",
+          "bitmapResolution": 1,
+          "rotationCenterX": 240,
+          "rotationCenterY": 180,
+          "dataFormat": "svg",
+          "assetId": "stage-bd",
+          "md5ext": "01d0f6d7f3be4c5f906c7a5e36d7c66f.svg"
+        }
+      ],
+      "sounds": [],
+      "volume": 100,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "layerOrder": 0
+    },
+    {
+      "name": "Player",
+      "variables": {
+        "xSpeed": [0],
+        "ySpeed": [0]
+      },
+      "lists": {},
+      "scripts": [
+        [
+          "whenGreenFlag",
+          [
+            ["setVar:to:
